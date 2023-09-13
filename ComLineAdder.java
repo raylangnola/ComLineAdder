@@ -1,13 +1,16 @@
 public class ComLineAdder {
     public static void main(String[] args) {
         int sum = 0;
+        int valid_int_count = 0;
         for(int ndx = 0; ndx < args.length; ndx++) {
             try {
                 sum += Integer.parseInt(args[ndx]);
+                valid_int_count++;
             } catch (Exception e) {
                 System.out.printf("Couldn't convert %s\n",args[ndx]);
             }       
         }
-        System.out.printf("Sum of %d values is: %,d\n",args.length,sum);
+        System.out.printf("Of %d arguments, sum of %d values is: %d\n",
+                        args.length,valid_int_count,sum);
     }
 }
