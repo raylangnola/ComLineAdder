@@ -1,6 +1,7 @@
 public class ComLineAdder {
     public static void main(String[] args) {
         int sum = 0;
+        System.out.printf("%d arguments\n",args.length);
         for(int ndx = 0; ndx < args.length; ndx++) {
             try {
                 sum += Integer.parseInt(args[ndx]);
