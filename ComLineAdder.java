@@ -9,7 +9,7 @@ public class ComLineAdder {
         int num = getUserInput(sc);
         ArrayList<String> moves = new ArrayList<>(List.of("Jab", "Cross", "Hook", "Uppercut", "Body Jab",
                 "Body UpperCut", "Body Hook", "Body Cross", "Slip", "Duck", "Weave", "Bob", "Block", "Parry", "Roll"));
-        ArrayList<String> combo = null;
+        ArrayList<String> combo = new ArrayList<>();
         for (int i = 0; i < num; i++) {
             int rand = (int) (Math.random() * moves.size());
             assert false;
