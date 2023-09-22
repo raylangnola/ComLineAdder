@@ -11,6 +11,6 @@ public class ComLineAdder {
                 System.out.printf("Couldn't convert %s\n",args[ndx]);
             }       
         }
-        System.out.printf("Total of %d values is: %,d\n",args.length,sum,count);
+        System.out.printf("Total of %d values out of %d arguements is: %,d\n",count,args.length,sum);
     }
 }
